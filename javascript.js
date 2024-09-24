@@ -1,3 +1,5 @@
+
+
 let text = document.getElementById('parralox_texts');
 let Lleaf = document.getElementById('Lleaf');
 let Rleaf = document.getElementById('Rleaf');
@@ -21,53 +23,56 @@ let textPP = document.getElementById('parralox_texts_pp');
 
 // });
 
-function getCurrentPageName() {
-    const pathname = window.location.pathname;
-    // Extract the page name from the pathname
-    return pathname.substring(pathname.lastIndexOf('/') + 1);
-}
+document.addEventListener('DOMContentLoaded', () => {
+
+    function getCurrentPageName() {
+        const pathname = window.location.pathname;
+        // Extract the page name from the pathname
+        return pathname.substring(pathname.lastIndexOf('/') + 1);
+    }
 
 
-// Execute code conditionally
-if (getCurrentPageName() === "index.html" || getCurrentPageName() === "questionStartingPage.html" || getCurrentPageName() === "questionEndingPage.html") {
-    console.log(getCurrentPageName());
-    window.addEventListener('load', () => {
-        console.log("hello");
-        text.classList.toggle('active-text');  //ACTIVE CLASS 30%
-        Lleaf.classList.toggle('active-Lleaf');
-        Rleaf.classList.toggle('active-Rleaf');
-        BottomFlower.classList.toggle('active-BottomFlower');
-        LTopFlower.classList.toggle('active-LTopFlower');
-        RTopFlower.classList.toggle('active-RTopFlower');
+    // Execute code conditionally
+    if (getCurrentPageName() === "index.html" || getCurrentPageName() === "questionStartingPage.html" || getCurrentPageName() === "questionEndingPage.html") {
+        console.log(getCurrentPageName());
+        window.addEventListener('load', () => {
+            console.log("hello");
+            text.classList.toggle('active-text');  //ACTIVE CLASS 30%
+            Lleaf.classList.toggle('active-Lleaf');
+            Rleaf.classList.toggle('active-Rleaf');
+            BottomFlower.classList.toggle('active-BottomFlower');
+            LTopFlower.classList.toggle('active-LTopFlower');
+            RTopFlower.classList.toggle('active-RTopFlower');
 
 
-    });
-} else if (getCurrentPageName() === "questionPage2.html" || getCurrentPageName() === "questionPage3.html" || getCurrentPageName() === "questionPage4.html" || getCurrentPageName() === "questionPage5.html") {
-    window.addEventListener('load', () => {
+        });
+    } else if (getCurrentPageName() === "questionPage2.html" || getCurrentPageName() === "questionPage3.html" || getCurrentPageName() === "questionPage4.html" || getCurrentPageName() === "questionPage5.html") {
+        window.addEventListener('load', () => {
 
-        textPP.classList.toggle('active-text-1'); //ACTIVE CLASS 35%
-        Lleaf.classList.toggle('active-Lleaf');
-        Rleaf.classList.toggle('active-Rleaf');
-        BottomFlower.classList.toggle('active-BottomFlower');
-        LTopFlower.classList.toggle('active-LTopFlower');
-        RTopFlower.classList.toggle('active-RTopFlower');
-
-
-    });
-} else {
-    window.addEventListener('load', () => {
-
-        textPP.classList.toggle('active-text-2'); //ACTIVE CLASS 42%
-        Lleaf.classList.toggle('active-Lleaf');
-        Rleaf.classList.toggle('active-Rleaf');
-        BottomFlower.classList.toggle('active-BottomFlower');
-        LTopFlower.classList.toggle('active-LTopFlower');
-        RTopFlower.classList.toggle('active-RTopFlower');
+            textPP.classList.toggle('active-text-1'); //ACTIVE CLASS 35%
+            Lleaf.classList.toggle('active-Lleaf');
+            Rleaf.classList.toggle('active-Rleaf');
+            BottomFlower.classList.toggle('active-BottomFlower');
+            LTopFlower.classList.toggle('active-LTopFlower');
+            RTopFlower.classList.toggle('active-RTopFlower');
 
 
-    });
-}
+        });
+    } else {
+        window.addEventListener('load', () => {
 
+            textPP.classList.toggle('active-text-2'); //ACTIVE CLASS 42%
+            Lleaf.classList.toggle('active-Lleaf');
+            Rleaf.classList.toggle('active-Rleaf');
+            BottomFlower.classList.toggle('active-BottomFlower');
+            LTopFlower.classList.toggle('active-LTopFlower');
+            RTopFlower.classList.toggle('active-RTopFlower');
+
+
+        });
+    }
+
+});
 
 
 // QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  
