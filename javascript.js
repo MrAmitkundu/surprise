@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function getCurrentPageName() {
         const pathname = window.location.pathname;
         // Extract the page name from the pathname
+        
         return pathname.substring(pathname.lastIndexOf('/') + 1);
     }
 
+    console.log(getCurrentPageName());
 
     // Execute code conditionally
     if (getCurrentPageName() === "index.html" || getCurrentPageName() === "questionStartingPage.html" || getCurrentPageName() === "questionEndingPage.html") {
