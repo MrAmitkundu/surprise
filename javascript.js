@@ -23,7 +23,6 @@ let textPP = document.getElementById('parralox_texts_pp');
 
 // });
 
-document.addEventListener('DOMContentLoaded', () => {
 
     function getCurrentPageName() {
         const pathname = window.location.pathname;
@@ -60,10 +59,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         });
+    } else if (getCurrentPageName() === "questionPage1.html" || getCurrentPageName() === "passowardPage.html" ) {
+        window.addEventListener('load', () => {
+
+            textPP.classList.toggle('active-text-1'); //ACTIVE CLASS 35%
+            Lleaf.classList.toggle('active-Lleaf');
+            Rleaf.classList.toggle('active-Rleaf');
+            BottomFlower.classList.toggle('active-BottomFlower');
+            LTopFlower.classList.toggle('active-LTopFlower');
+            RTopFlower.classList.toggle('active-RTopFlower');
+
+
+        });
     } else {
         window.addEventListener('load', () => {
 
-            textPP.classList.toggle('active-text-2'); //ACTIVE CLASS 42%
+            console.log("hello");
+            text.classList.toggle('active-text');  //ACTIVE CLASS 30%
             Lleaf.classList.toggle('active-Lleaf');
             Rleaf.classList.toggle('active-Rleaf');
             BottomFlower.classList.toggle('active-BottomFlower');
@@ -74,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
+
 
 
 // QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  QUESTIONS HANDELER  
